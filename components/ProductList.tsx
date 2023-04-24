@@ -22,7 +22,11 @@ function ProductList() {
       </h2>
       <ul className="row">
         {productList.map((product) => (
-          <li className="col-5 col-lg-3 mt-4 mx-auto" style={{ listStyle: "none" }}>
+          <li
+            key={product.category}
+            className="col-5 col-lg-3 mt-4 mx-auto"
+            style={{ listStyle: "none" }}
+          >
             <Card>
               <Card.Img variant="top" src="" />
 
